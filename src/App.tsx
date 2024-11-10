@@ -4,9 +4,10 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import ScrollTop from './components/ScrollTop';
+import Skill from './components/Skill';
 import './main.css';
 
-import { servicesData, aboutContent, socialmedia } from './Data';
+import { servicesData, aboutContent, socialmedia, skills } from './Data';
 
 import './main';
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <Hero socialmedia={socialmedia} />
       <About aboutContent={aboutContent} />
+      <Skill skills={skills} />
       <Projects servicesData={servicesData} />
       <Footer socialmedia={socialmedia} />
       <ScrollTop />

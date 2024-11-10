@@ -41,3 +41,13 @@ export const socialmedia = {
   instagram: 'https://www.instagram.com/dency.kichu/',
   mail: 'mailto:neelamkavil2002@gmail.com',
 };
+
+export const skills = [
+  { name: 'React', percentage: 80 },
+  { name: 'Node', percentage: 80 },
+  { name: 'Next', percentage: 80 },
+  { name: 'Javascript', percentage: 80 },
+  { name: 'Java', percentage: 60 },
+  { name: 'Python', percentage: 70 },
+  { name: 'C', percentage: 70 },
+];

@@ -1,0 +1,54 @@
+.skills-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.skills-container--animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skills-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.skill-item--animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.circular-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
