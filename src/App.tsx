@@ -6,17 +6,17 @@ import Footer from './components/Footer';
 import ScrollTop from './components/ScrollTop';
 import './main.css';
 
-import { servicesData } from './Data';
+import { servicesData, aboutContent, socialmedia } from './Data';
 
 import './main';
 function App() {
   return (
     <div className="">
       <Header />
-      <Hero />
-      <About />
+      <Hero socialmedia={socialmedia} />
+      <About aboutContent={aboutContent} />
       <Projects servicesData={servicesData} />
-      <Footer />
+      <Footer socialmedia={socialmedia} />
       <ScrollTop />
     </div>
   );

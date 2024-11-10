@@ -4,7 +4,11 @@ import HeroImage from '../assets/img/hero-bg.png';
 import { AiOutlineMail, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import './hero.css';
 
-export default function Hero() {
+interface HeroProps {
+  socialmedia: { linkedin: string; instagram: string; mail: string };
+}
+
+const Hero: React.FC<HeroProps> = ({ socialmedia }) => {
   useEffect(() => {
     const typed = new Typed('.typed', {
       strings: ['Designer', 'Developer'],
@@ -25,17 +29,19 @@ export default function Hero() {
           I'm <span className="typed"></span>
         </p>
         <div className="social-links">
-          <a href="#">
+          <a href={socialmedia.mail}>
             <AiOutlineMail />
           </a>
-          <a href="#">
+          <a href={socialmedia.instagram}>
             <AiFillInstagram />
           </a>
-          <a href="#">
+          <a href={socialmedia.linkedin}>
             <AiFillLinkedin />
           </a>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Hero;
